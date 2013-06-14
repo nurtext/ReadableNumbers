@@ -10,22 +10,22 @@
 class ReadableNumbers 
 {
 	// Stores the Singleton instance
-	static private $instance			= NULL;
+	static private $instance= NULL;
 	
 	// No of decimals
-	static private $decimals			= 1;
+	static private $decimals      = 1;
 	
 	// Decimal point
-	static private $dec_point			= '.';
+	static private $dec_point     = '.';
 	
 	// Thousands separator
-	static private $thousands_sep		= ',';
+	static private $thousands_sep = ',';
 	
 	// Stores the abbreviations
-	static private $abbr				= array('K', 'M', 'B', 'TN', 'Q');
+	static private $abbr          = array('K', 'M', 'B', 'TN', 'Q');
 	
 	// Stores the readable number
-	static private $readable			= '';
+	static private $readable      = '';
 	
 	// Static class, forbid constructing/cloning
 	private function __construct(){}
@@ -46,9 +46,9 @@ class ReadableNumbers
 	// Sets formatting options for output
 	static public function setFormattingOptions($decimals = 1, $dec_point = '.', $thousands_sep = ',')
 	{
-		self::$decimals			= $decimals;
-		self::$dec_poins		= $dec_point;
-		self::$thousands_sep	= $thousands_sep;
+		self::$decimals      = $decimals;
+		self::$dec_poins     = $dec_point;
+		self::$thousands_sep = $thousands_sep;
 		
 	}
 	
